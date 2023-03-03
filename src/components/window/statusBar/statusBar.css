@@ -1,0 +1,55 @@
+.__statusbar {
+    height: 3vmin;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(40px);
+    padding: 0.9rem 0;
+}
+.__statusbar > div.s1 {
+    padding-left: 1rem;
+}
+.__statusbar > div > div.logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+.__statusbar > div > div.logo > img {
+    width: 100%;
+}
+.__statusbar > div > div.window-texts {
+    display: flex;
+    gap: 0.15rem;
+}
+.__statusbar > div > div.window-texts > span,
+.__statusbar > div.s2 > span {
+    font-weight: bold;
+    font-size: 0.9rem;
+    user-select: none;
+    cursor: pointer;
+    padding: 0.1rem 1rem;
+    /* color: white; */
+    border-radius: 1000000px;
+}
+.__statusbar > div > div.window-texts > span:hover,
+.__statusbar > div.s2 > span:hover,
+.__statusbar > div.s2 > div.icons > li.icons:hover {
+    background-color: rgba(110, 110, 110, 0.308);
+}
+.__statusbar > div.s2 > span {
+    padding: 0.1rem 0.4rem;
+}
+.__statusbar > div.s2 > div.icons > li.icons {
+    list-style-type: none;
+    width: 20px;
+    /* padding: 0.2rem; */
+    border-radius: 50%;
+    height: 20px;
+    cursor: pointer;
+}
+.__statusbar > div.s2 > div.icons > li.icons > img {
+    width: 100%;
+}
+.__statusbar > div.s2 > div.icons {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}

@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--col);
+    user-select: none;
+    font-family: var(--font);
+}
+body,
+html {
+    height: 100vh;
+    /* width: 100vmin; */
+}

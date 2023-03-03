@@ -1,0 +1,92 @@
+.__windowDoc {
+    height: 7vmin;
+    /* background-color: rgb(46, 105, 156); */
+}
+.__windowDoc > main {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.068);
+    backdrop-filter: blur(40px);
+    /* width: 40%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    border-radius: 2vmin;
+    transition: 0.2s all ease;
+    margin-bottom: 0.4rem;
+}
+
+.__windowDoc > main > li {
+    width: 50px;
+    height: 50px;
+    list-style-type: none;
+    /* border: 1px solid red; */
+    /* cursor: pointer; */
+    transition: 0.2s all ease;
+    position: relative;
+}
+.__windowDoc > main > li > img {
+    width: 100%;
+    user-select: none;
+}
+.__windowDoc > main > li[about="s1"] {
+    transform: translateY(-28px) scale(1.5);
+    margin: 0 1rem;
+}
+.__windowDoc > main > li[about="s2"] {
+    transform: translateY(-19px) scale(1.1);
+    margin: 0 0.5rem;
+}
+.__windowDoc > main > li[about="s-1"] {
+    transform: translateY(-28px) scale(1.5);
+    margin: 0 1rem;
+}
+.__windowDoc > main > li[about="s-2"] {
+    transform: translateY(-19px) scale(1.1);
+    margin: 0 0.5rem;
+}
+
+.__windowDoc > main > li:hover {
+    transform: translateY(-35px) scale(1.8);
+}
+.__windowDoc > main > span.liner {
+    height: 80%;
+    width: 2px;
+    background-color: rgba(188, 188, 188, 0.545);
+}
+.__windowDoc > main > li[about="menu"]:hover {
+    transform: translate(0) scale(1);
+}
+
+.__windowDoc > main > li:hover::after {
+    display: flex;
+}
+.__windowDoc > main > li::after {
+    content: attr(aria-details);
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -19px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    text-transform: capitalize;
+    background-color: rgba(239, 239, 239, 0.161);
+    border-radius: 6px;
+    padding: 0.04rem 0.4rem;
+    backdrop-filter: blur(30px);
+    color: black;
+    /* box-shadow: 0 0 0.1rem rgba(255, 255, 255, 0.284); */
+}
+@keyframes appShower {
+    from {
+        transform: translateY(-35px) scale(1.8);
+    }
+    50% {
+        transform: translateY(-6 5px) scale(1.8);
+    }
+    to {
+        transform: translateY(-35px) scale(1.8);
+    }
+}
